@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="krugermaxi">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, scalable=no"/>
+        <title>KrugerMaxi</title>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/estilos.css"/>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Kruger<span>Maxi</span></h1>
+        </header>
+        <section class="articulos" ng-controller="ArticulosController as ctr">
+            <producto ng-repeat="articulo in ctr.articulos"></producto>
+        </section>
+        <script src="js/lib/angular.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/directives.js"></script>
+    </body>
+</html>

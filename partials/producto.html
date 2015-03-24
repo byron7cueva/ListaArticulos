@@ -1,0 +1,8 @@
+<article class="articulo">
+    <h2>{{articulo.descripcion}}</h2>
+    <figure class="foto">
+        <img ng-src="img/{{articulo.nombre}}.jpg"/>
+    </figure>
+    <p class="precio">{{articulo.precio | currency}}</p>
+    <p class="categoria"><span>Categoria: </span>{{articulo.categoria}}</p>
+</article>
